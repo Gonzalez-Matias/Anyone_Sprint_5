@@ -43,8 +43,6 @@ def load_config(config_file_path):
     with open(config_file_path) as conf:
         config = load(conf, Loader=Loader)
 
-    # Don't remove this as will help you doing some basic checks on config
-    # content
     validate_config(config)
 
     return config
@@ -130,17 +128,6 @@ def predict_from_folder(folder, model, input_size, class_names):
             - labels: is the list of the true labels, we will use them to
                       compare against model predictions.
     """
-    # Use keras.utils.load_img() to correctly load the image and
-    # keras.utils.img_to_array() to convert it to the format needed
-    # before sending it to our model.
-    # You can use os.walk() or walkdir() to iterate over the files in the
-    # folder.
-    # Don't forget you must not return the raw model prediction. Model
-    # prediction will be a vector assigning probability scores to each
-    # class. You must take the position of the element in the vector with
-    # the highest probability and use that to get the corresponding class
-    # name from `class_names` list.
-    # TODO
     predictions = []
     labels = []
     for dirpath, _, files in os.walk(folder):
