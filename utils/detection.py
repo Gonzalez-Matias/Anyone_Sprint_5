@@ -7,11 +7,6 @@ setup_logger()
 # Load here your Detection model
 # The chosen detector model is "COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml"
 # because this particular model has a good balance between accuracy and speed.
-# You can check the following Colab notebook with examples on how to run
-# Detectron2 models
-# https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5.
-# Assign the loaded detection model to global variable DET_MODEL
-# TODO
 cfg = get_cfg()
 cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml"))
 cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
