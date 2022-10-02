@@ -99,8 +99,6 @@ def main(config_file):
     config = utils.load_config(config_file)
 
     # Get the list of output classes
-    # We will use it to control the order of the output predictions from
-    # keras is consistent
     class_names = utils.get_class_names(config)
 
     # Check if number of classes is correct
@@ -111,8 +109,6 @@ def main(config_file):
         )
 
     # Load training dataset
-    # We will split train data in train/validation while training our
-    # model, keeping away from our experiments the testing dataset
     train_ds = keras.preprocessing.image_dataset_from_directory(
         subset="training",
         class_names=class_names,
