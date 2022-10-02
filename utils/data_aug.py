@@ -33,9 +33,6 @@ def create_data_aug_layer(data_aug_layer):
         Sequential model having the data augmentation layers inside.
     """
     # Parse config and create layers
-    # You can use as a guide on how to pass config parameters to keras
-    # looking at the code in `scripts/train.py`
-    # Append the data augmentation layers on this list
     layers = list(data_aug_layer.items())
     data_aug_layers = []
     for new_layer in range(0,len(layers)):
@@ -43,7 +40,6 @@ def create_data_aug_layer(data_aug_layer):
         data_aug_layers.append(AUGMENTATION[opt_name](**opt_params))
     
     # Return a keras.Sequential model having the the new layers created
-    # Assign to `data_augmentation` variable
     data_augmentation = tf.keras.Sequential(data_aug_layers)
 
     return data_augmentation
