@@ -2,6 +2,22 @@
 
 This repository contains the code and resources for a vehicle classification project. The goal of the project is to accurately predict the make and model of vehicles from unstructured e-commerce images. By utilizing convolutional neural networks (CNNs), we preprocess the data, generate augmented training samples, and train a fine-grained classification model.
 
+<p align="center">
+    <a href="https://www.python.org/">
+        <img src="https://img.shields.io/badge/Python-3.10%20-%23006400.svg?&style=for-the-badge&logo=Python&logoColor=green" /></a>
+    <a href="https://www.tensorflow.org/">
+        <img src="https://img.shields.io/badge/Tensorflow%20-%23FF8300.svg?&style=for-the-badge&logo=Tensorflow&logoColor=white" /></a>
+    <a href="https://www.tensorflow.org/">
+        <img src="https://img.shields.io/badge/Pytorch%20-%23EE4C2C.svg?&style=for-the-badge&logo=Pytorch&logoColor=white" /></a>
+    <a href="https://www.docker.com/">
+        <img src="https://img.shields.io/badge/Docker%20-%23003F8C.svg?&style=for-the-badge&logo=Docker&logoColor=white" /></a>
+    <a href="https://choosealicense.com/licenses/mit/">
+        <img src="https://img.shields.io/badge/License-MIT%20-%23212121.svg?&style=for-the-badge&logoColor=green" /></a>
+    <a href="https://www.linkedin.com/in/enzo-matias-gonzalez/">
+        <img src="https://img.shields.io/badge/LinkedIn%20-%230270AD.svg?&style=for-the-badge&logo=Linkedin&logoColor=white" /></a>
+    
+</p>
+
 ## Key Features
 
 - Preprocessing: The dataset of unstructured e-commerce images is preprocessed to ensure consistent inputs for the classification model. This includes resizing, normalizing, and removing irrelevant information such as croping backgrounds.
